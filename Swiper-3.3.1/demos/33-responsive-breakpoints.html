@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="../dist/css/swiper.min.css">
+
+    <!-- Demo styles -->
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 300px;
+		background-color:yellow;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: red;
+widht:100%;
+height:100%;
+margin-top:1%;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+	.swiper-slide #qq{
+	widht: 100%;
+	height:100%;
+	background-color:pink;
+	
+	}
+	.swiper-slide #qq img{
+	widht: 98%;
+	height:78%;
+	margin:1%;
+	}
+	.swiper-slide #qq p{
+	widht: 98%;
+	height:20%;
+	}
+	
+    </style>
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><div id="qq"><img src="img/sight1.jpg" alt="img1" title="img1"><p>like ittcfxcccv</p></div></div>
+            <div class="swiper-slide"><div id="qq"><img src="img/sight1.jpg" alt="img1" title="img1"><p>like itcvvvvv</p></div></div>
+            <div class="swiper-slide"><div id="qq"><img src="img/sight1.jpg" alt="img1" title="img1"><p>like it</p></div></div>
+            <div class="swiper-slide"><div id="qq"><img src="img/sight1.jpg" alt="img1" title="img1"><p>like it</p></div></div>
+          
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="../dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        slidesPerView: 5,
+        spaceBetween: 50,
+        breakpoints: {
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 40
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            },
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 10
+            }
+        }
+    });
+    </script>
+</body>
+</html>
+#wrapper #table{
+	background-image:url('/img/fone.jpg');
+	width:100%;
+	float:left;
+}
+ #wrapper #table #table1{
+	width:100%;
+	/* padding-left:1%;
+	padding-right:1%;
+	overflow: scroll; */
+	height:200px;
+	background-color:red;
+}
+ #wrapper #table #table1.swiper-container {
+        width:100%;
+        height: 220px;
+		background-color:white;
+    }
+   #wrapper #table #table1 .swiper-slide1 {
+        text-align: center;
+        font-size: 18px;
+        background:red;
+		width:100%;
+		height:100%;
+		margin-top:1%;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+	#wrapper #table #table1.swiper-slide1 #qq{
+	width:100%;
+	height:100%;
+	background-color:#f5f0e9;
+	
+	}
+	#wrapper #table #table1.swiper-slide1 #qq img{
+	width:98%;
+	height:78%;
+	margin:1%;
+	}
+	#wrapper #table #table1.swiper-slide1 #qq p{
+	width:98%;
+	height:18%;
+	background-color:f5f0e9;
+		margin:1%;
+		text-align:center;
+	}
